@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-gap: 0.25rem;
+    grid-template-rows: 3rem 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "hd"
+    "main";
+}
+
+#title{
+    text-decoration: underline;
+}
+
+.head{
+    grid-area: hd;
+    border: 1px solid black;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+}
+
+.head a{
+    color: black;
+}
+
+#search{
+    height: 70%;
+}
+
+.content{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 1fr;
+}
+
+.left{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.desc{
+    margin-top: 0.6rem;
+}
+
+hr{
+    margin: 0.5rem 0;
+}
+
+.box{
+    margin: 1rem 0;
+    padding-bottom: 0.4rem;
+    border: 2px solid grey;
+}
+
+.heading, .subheading{
+    margin: 1rem 0;
+}
+
+.subheading > ul{
+    padding-left: 1rem;
+    list-style-type: circle;
+}
+
+.numbered{
+    padding-left: 1rem;
+}
+
+.right{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.about{
+    background-color: darkgray;
+    padding: 1rem;
+}
+
+.archives, .elsewhere{
+    padding: 1rem;
+}
+
+
+ul{
+    list-style-type: none;
+}
